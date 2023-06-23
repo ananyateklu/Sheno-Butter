@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"
-
+import sideimg from '../../assets/ShenoButter-side.png'
+import mainimg from '../../assets/mainimg.png'
 
 const Home:React.FC= () => {
     return(
@@ -25,30 +26,38 @@ const Home:React.FC= () => {
         
         </div>
         <div className="sidebar-img">
-
+      <img src={sideimg} className="bar-img" alt="side-img"/>
         </div>
         </div>
       <div className="Home-main">
-     
+      
       <div className="main-img-ctn">
         <div className="main-img">
-mainimg
+       <p>AUTHENTIC ETHIOPIAN <br/> BUTTER
+       <br/>
+       <br/>
+       እቤት የተነጠረ የኢትዮጵያ <br/> ቅቤ </p>
         </div>
         <div className="side-img1">
-          1
+          
         </div>
         <div className="side-img2">
-          2
+          
         </div>
         <div className="side-img3">
-          3
+          
         </div>
         <div className="side-img4">
-          4
+          
         </div>
       </div>
       <div className="product-holder">
-555
+      <div className="product">
+        Product one
+      </div>
+      <div className="product">
+        Product two
+      </div>
       </div>
       </div>
         </div>
