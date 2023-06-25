@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css"
 import sideimg from '../../assets/ShenoButter-side.png'
 import mainimg from '../../assets/mainimg.png'
+import HomeSlide from "./HomeSlide";
 
 const Home:React.FC= () => {
     return(
@@ -38,17 +39,11 @@ const Home:React.FC= () => {
        <br/>
        እቤት የተነጠረ የኢትዮጵያ <br/> ቅቤ </p>
         </div>
-        <div className="side-img1">
-          
-        </div>
-        <div className="side-img2">
-          
-        </div>
-        <div className="side-img3">
-          
-        </div>
-        <div className="side-img4">
-          
+        <div className="side-img">
+          <HomeSlide/>
+          <div className="sideimg-low">
+            
+          </div>
         </div>
       </div>
       <div className="product-holder">

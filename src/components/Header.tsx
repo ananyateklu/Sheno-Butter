@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../assets/shenologo.png';
+import './Header.css';
 
 const Header:React.FC= () => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,7 +40,7 @@ const Header:React.FC= () => {
   
   
   return(
-        <header>
+        <header className="header">
         <div>
         <a href="/" className="App-logo-link">
         <img src={logo} className="App-logo" alt="logo" />

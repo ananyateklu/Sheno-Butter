@@ -5,7 +5,7 @@ const Footer:React.FC= () => {
     return(
 
         <div>
-            Footer
+            Sheno Kibe 
         </div>
 
     );
