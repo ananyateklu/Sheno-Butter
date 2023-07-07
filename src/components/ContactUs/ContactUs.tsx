@@ -1,6 +1,5 @@
 import React from "react";
 import "./ContactUs.css"
-import tradimg from "../../assets/tradition.png";
 
 const ContactUs:React.FC= () => {
     return(
