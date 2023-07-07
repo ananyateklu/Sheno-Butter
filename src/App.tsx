@@ -7,16 +7,13 @@ import Home from './components/Home/Home';
 import Origins from './components/Origins/Origins';
 import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs';
-
+import  CartProvider  from './components/Home/CartProvider';
 
 function App() {
-
-
-  
-
   
   return (
     <div className="App">
+      <CartProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -27,7 +24,8 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+      </CartProvider>
+      </div>
   );
 }
 

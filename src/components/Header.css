@@ -1,0 +1,16 @@
+.header{
+    z-index: 2;
+    background-color: transparent;
+    position:relative;
+}
+.checkout-container{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+  }
+
+  
+  .checkout-btn{
+    font-size: 16px;
+  }
+  
