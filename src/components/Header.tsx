@@ -1,13 +1,8 @@
 import React, { useEffect } from 'react';
-import logo from '../assets/shenologo.png';
+import logo from '../assets/shenologot.png';
 import './Header.css';
 
 const Header:React.FC= () => {
-
-    
- 
-
-
   useEffect(() => {
 
     return () => {

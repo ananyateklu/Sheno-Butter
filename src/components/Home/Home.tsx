@@ -32,15 +32,13 @@ const Home: React.FC = () => {
 
   return (
     <div className="main-container">
-      <button
-        className="cart-button" 
+      <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-cart-supermarket-flatart-icons-flat-flatarticons.png" alt="external-cart-supermarket-flatart-icons-flat-flatarticons"
+        className="cart-button"
         onClick={(e) => {
           e.stopPropagation(); // Prevent click from bubbling to container
           setIsCartVisible(!isCartVisible);
         }}
-      >
-        Cart ({itemCount})
-      </button> 
+      /> <p className="cart-amount">{itemCount}</p>
       {isCartVisible && <Cart />}
       <div className="side-bar">
         <div className="Home-Navbar">
