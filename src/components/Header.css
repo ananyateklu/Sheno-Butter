@@ -1,7 +1,7 @@
 .header{
     z-index: 2;
     background-color: transparent;
-    position:relative;
+    position: fixed;
 }
 .checkout-container{
     position: absolute;

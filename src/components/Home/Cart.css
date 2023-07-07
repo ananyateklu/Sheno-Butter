@@ -11,8 +11,18 @@
   box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
+.cart-container h2 {
+    color: black;
+    font-weight: 600;
+}
+
+.cart-container h3 {
+    color: black;
+    font-weight: 600;
+}
+
 .cart-item {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 20px;
   background-color: #f4f4eb;
   display: flex;
@@ -22,9 +32,19 @@
 }
 
 .cart-item h4 {
+  color: #845c5c;
+  font-weight: 500;
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.cart-item h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
 .buy-now-btn {
   background-color: #845c5c;
