@@ -94,7 +94,7 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
       ))}
       <h3>Total: ${totalPrice.toFixed(2)}</h3>
       <label htmlFor="phoneNumber" className='phonelabel'>Phone Number (required):</label>
-      <input id="phoneNumber" className='phonefield' value={phoneNumber} onChange={handlePhoneNumberChange} required />
+      <input id="phoneNumber" className='phonefield' placeholder="Phone Number" value={phoneNumber} onChange={handlePhoneNumberChange} required />
       <PayPalScriptProvider options={initialOptions}>
         <PayPalButtons
           key={forceRefresh}
