@@ -3,10 +3,18 @@ import './Cart.css';
 import CartContext from './CartContext';
 
 const Cart: React.FC = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, removeFromCart, addToCart } = useContext(CartContext);
 
   // Calculate the total price
   const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+
+  const handleRemoveFromCart = (productName: string, price: number) => {
+    removeFromCart({ productName, price, quantity: 1 });
+  }
+
+  const handleAddToCart = (productName: string, price: number) => { 
+    addToCart({ productName, price, quantity: 1 });
+  }
 
   return (
     <div className="cart-container">
@@ -16,6 +24,8 @@ const Cart: React.FC = () => {
           <h3>{item.quantity}x </h3>
           <h4>{item.productName}</h4>
           <h4>Price: ${item.price.toFixed(2)}</h4>
+          <button onClick={() => handleAddToCart(item.productName, item.price)}>+</button>
+          <button onClick={() => handleRemoveFromCart(item.productName, item.price)}>-</button>
         </div>
       ))}
       <h3>Total: ${totalPrice.toFixed(2)}</h3>

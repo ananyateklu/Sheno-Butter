@@ -31,6 +31,22 @@
   border-radius: 15px;
 }
 
+.cart-item button {
+    background-color: #845c5c;
+    color: #fff;
+    border: none;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cart-item button:hover {
+    background-color: #c5b6b6c1;
+}
+
+
+
 .cart-item h4 {
   color: #845c5c;
   font-weight: 500;

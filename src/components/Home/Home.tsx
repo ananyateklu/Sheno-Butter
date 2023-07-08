@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     const closeCart = () => {
       setIsCartVisible(false);
     }
-    document.querySelector('.main-container')?.addEventListener('click', closeCart);
+
 
     // Clean up the effect by removing the event listener
     return () => {
