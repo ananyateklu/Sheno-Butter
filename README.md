@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Create .env file on the main directory
+REACT_APP_PAYPAL_CLIENT_ID= 'PaypalClientID'
+
 ## Available Scripts
 
 In the project directory, you can run:
