@@ -56,7 +56,10 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
           onApprove={async (data, actions) => {
             const details = await actions.order!.capture();
             const name = details.payer!.name!.given_name;
-            alert("Transaction completed by " + name);
+            const email = details.payer!.email_address;
+            const address: any  = details.purchase_units![0].shipping!.address;
+            const shippingAddress = `${address.address_line_1}, ${address.admin_area_2}, ${address.admin_area_1}, ${address.postal_code}, ${address.country_code}`;
+            alert("Transaction completed by " + name + "\nEmail: " + email + "\nShipping Address: " + shippingAddress);
           }}
         />
       </PayPalScriptProvider>
