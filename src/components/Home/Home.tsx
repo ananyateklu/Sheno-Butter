@@ -40,20 +40,16 @@ const Home: React.FC = () => {
           setIsCartVisible(!isCartVisible);
         }}
       /> <p className="cart-amount">{itemCount}</p>
-      {isCartVisible && <Cart isVisible={isCartVisible}/>}
+      {isCartVisible && <Cart isVisible={isCartVisible} />}
       <div className="side-bar">
         <div className="Home-Navbar">
-          <a href="/" className="Home-link ">
-            HOME
-          </a>
-          <a href="/origins" className="Origins-link">
-            ORIGINS
+          <a href="/contactUs" className="Contact-link">
+          <img width="70" height="70" src="https://img.icons8.com/bubbles/100/email--v1.png" alt="email--v1"/>
+            <p style={{width: "50", height: "50"}}>CONTACT US</p>
           </a>
           <a href="/aboutUs" className="About-link">
-            ABOUT US
-          </a>
-          <a href="/contactUs" className="Contact-link">
-            CONTACT US
+          <img width="70" height="70" src="https://img.icons8.com/bubbles/100/000000/about.png" alt="about"/>
+            <p style={{width: "50", height: "50"}}>ABOUT US</p>
           </a>
         </div>
         <div className="sidebar-img">

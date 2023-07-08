@@ -97,18 +97,39 @@
   animation: slideDown 1.5s ease-in-out;
 }
 
-.About-link {
-  font-size: calc(1px + 1.8vmin);
-  color: #8f5c5cf2;
-  text-decoration: none;
-  animation: slideDown 2s ease-in-out;
-}
+
 
 .Contact-link {
   font-size: calc(1px + 1.8vmin);
   color: #8f5c5cf2;
   text-decoration: none;
   animation: slideDown 2.5s ease-in-out;
+}
+
+.Contact-link img {
+  display: absolute;
+  margin-left: 8px;
+}
+.Contact-link p {
+  display: absolute;
+
+}
+
+.About-link {
+  font-size: calc(1px + 1.8vmin);
+  color: #8f5c5cf2;
+  text-decoration: none;
+  animation: slideDown 2s ease-in-out;
+  margin-top: 30px;
+}
+
+.About-link img {
+  display: absolute;
+  margin-left: 8px;
+}
+.About-link p {
+  display: absolute;
+  margin-left: 8px;
 }
 
 .main-img-ctn {
