@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           setIsCartVisible(!isCartVisible);
         }}
       /> <p className="cart-amount">{itemCount}</p>
-      {isCartVisible && <Cart />}
+      {isCartVisible && <Cart isVisible={isCartVisible}/>}
       <div className="side-bar">
         <div className="Home-Navbar">
           <a href="/" className="Home-link ">
