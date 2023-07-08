@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 
 export interface CartItem {
   productName: string;
@@ -9,13 +9,13 @@ export interface CartItem {
 interface CartContextProps {
   cart: CartItem[];
   addToCart: (item: CartItem) => void;
-  clearCart: () => void;
+  removeFromCart: (item: CartItem) => void;
 }
 
-const CartContext = React.createContext<CartContextProps>({
+const CartContext = createContext<CartContextProps>({
   cart: [],
   addToCart: () => {},
-  clearCart: () => {}
+  removeFromCart: () => {},
 });
 
 export default CartContext;

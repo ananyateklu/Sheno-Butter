@@ -19,7 +19,8 @@ const Home: React.FC = () => {
     const closeCart = () => {
       setIsCartVisible(false);
     }
-    document.querySelector('.main-container')?.addEventListener('click', closeCart);
+    document.querySelector('.Home-main')?.addEventListener('click', closeCart);
+    document.querySelector('.Home-Navbar')?.addEventListener('click', closeCart);
 
     // Clean up the effect by removing the event listener
     return () => {
@@ -39,7 +40,7 @@ const Home: React.FC = () => {
           setIsCartVisible(!isCartVisible);
         }}
       /> <p className="cart-amount">{itemCount}</p>
-      {isCartVisible && <Cart />}
+      {isCartVisible && <Cart isVisible={isCartVisible}/>}
       <div className="side-bar">
         <div className="Home-Navbar">
           <a href="/" className="Home-link ">
