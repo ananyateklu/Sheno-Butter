@@ -272,4 +272,11 @@
     font-family: 'Satisfy', Courier, monospace;
   }
 
-  
+  .contact-container{
+    display: grid ;
+    grid-template-columns: 25% 75%;
+    grid-gap:2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+  }
