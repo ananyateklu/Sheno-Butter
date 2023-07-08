@@ -1,5 +1,6 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import CartContext, { CartItem } from './CartContext';
+import Cookies from 'js-cookie';
 
 const cartReducer = (state: CartItem[], action: any) => {
     switch (action.type) {
@@ -45,11 +46,13 @@ const cartReducer = (state: CartItem[], action: any) => {
     }
 }
 
-
-
 const CartProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+    const initialCart = Cookies.get('cart') ? JSON.parse(Cookies.get('cart') as string) : [];
+    const [cart, dispatch] = useReducer(cartReducer, initialCart);
 
-    const [cart, dispatch] = useReducer(cartReducer, []);
+    useEffect(() => {
+        Cookies.set('cart', JSON.stringify(cart), { expires: 7 }); // cookie will expire after 7 days
+    }, [cart]);
 
     const addToCart = (item: CartItem) => {
         dispatch({ type: 'ADD', item });
@@ -57,7 +60,7 @@ const CartProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
 
     const removeFromCart = (item: CartItem) => {
         dispatch({ type: 'REMOVE', item });
-      }
+    }
 
     return (
         <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
