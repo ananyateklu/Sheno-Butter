@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from "react";
 import "./Home.css"
 import sideimg from '../../assets/ShenoButter-side.png'
 import HomeSlide from "./HomeSlide";
-import CartContext from './CartContext';
-import Cart from './Cart';
+import CartContext from '../Cart/CartContext';
+import Cart from '../Cart/Cart';
 
 const Home: React.FC = () => {
   const { addToCart, cart } = useContext(CartContext);
