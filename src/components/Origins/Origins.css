@@ -1,9 +1,44 @@
-.origins-main {
+.origins-container{
     display: grid;
 }
-
-.origins-container {
+.origins-main {
+    background-color: aquamarine;
+    grid-template-columns: 25% 75%;
+    height:100vh;
     display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 100px;
+    margin-top:100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    justify-content: space-around;
+
+
+    
+    
+    
+    transform: "translate(-50%,-50%)"
+}
+
+.origin-parallax{
     height: 100vh;
-    margin-top: 100px; 
+    border-radius: 20px;
+}
+
+.react-parallax{
+    border-radius: 20px;
+}
+
+.react-parallax img{
+    height:800px !important;
+}
+
+.origins-side{
+    
+}
+
+.origins-content{
+    color: aliceblue;
 }
