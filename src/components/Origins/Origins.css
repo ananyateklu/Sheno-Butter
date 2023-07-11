@@ -4,7 +4,7 @@
 .origins-main {
     background-color: aquamarine;
     grid-template-columns: 25% 75%;
-    height:100vh;
+   
     display: flex;
     flex-direction: column;
     
@@ -23,17 +23,20 @@
 }
 
 .origin-parallax{
-    height: 100vh;
+    display:grid;
+    
     border-radius: 20px;
+    grid-template-columns: 25% 1% 74%;
 }
 
 .react-parallax{
     border-radius: 20px;
 }
-
+/*
 .react-parallax img{
     height:800px !important;
 }
+*/
 
 .origins-side{
     
@@ -41,4 +44,28 @@
 
 .origins-content{
     color: aliceblue;
+}
+
+.ori-div{
+    border:2px solid white;
+}
+
+.origins-content h1{
+    padding-left:40%;
+}
+
+.ori-content{
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+}
+
+.ori-content p{
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
