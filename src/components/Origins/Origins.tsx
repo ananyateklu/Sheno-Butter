@@ -1,7 +1,7 @@
 import React from "react";
 import "./Origins.css"
 import { Parallax} from "react-parallax";
-import image1 from "../../assets/kitfoo.jpg"
+import image1 from "../../assets/ori-back-2.jpg"
 
 
   
@@ -13,22 +13,35 @@ const Origins:React.FC= () => {
         <div className="origins-container">
             
             <div className="origins-main" >
-            <Parallax bgImage={image1} strength={500}>
-            <div className="origin-parallax" >
             <div className="origins-side">
-                
+            <a href="/" className="Home-link ">
+            HOME
+          </a>
+          <a href="/origins" className="Origins-link">
+            ORIGINS
+          </a>
+          
+          <a href="/aboutUs" className="About-link">
+            ABOUT US
+          </a>
+          <a href="/contactUs" className="Contact-link">
+            CONTACT US
+          </a>
            
         
 
 
-            </div>
-            <div className="ori-div">
-            </div>
+         </div>
+         <div className="ori-cnt-div">
+            
+        </div>
+            <Parallax bgImage={image1} strength={200}>
+            <div className="origin-parallax" >
+            
+            
             <div className="origins-content">
                     <h1>ORIGINS</h1>
-            <div className="ori-cnt-div">
-
-            </div>
+           
             <div className="ori-content">
                 <p>
                 Welcome to our Origins page! We're excited to share the rich history and culture behind Traditional Ethiopian Butter.

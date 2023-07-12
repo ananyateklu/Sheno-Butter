@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactUs.css"
 import sideimg from '../../assets/ShenoButter-side.png'
 
+
 const ContactUs: React.FC = () => {
     return (
         <div className="contact-container">
@@ -72,9 +73,7 @@ const ContactUs: React.FC = () => {
                             </button>
                         </form>
                     </div>
-                    <div className="contact-img">
-
-                    </div>
+                    
                 </div>
             </div>
         </div>
