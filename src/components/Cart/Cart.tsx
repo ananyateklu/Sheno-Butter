@@ -9,7 +9,7 @@ const initialOptions = {
 };
 
 const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
-  const { cart, removeFromCart, addToCart } = useContext(CartContext);
+  const { cart, removeFromCart, addToCart, clearCart } = useContext(CartContext); // Added clearCart
 
   const [forceRefresh, setForceRefresh] = useState(Date.now());
   const [phoneNumber, setPhoneNumber] = useState<string>("");
@@ -78,6 +78,8 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
     await sendEmail(name, surname, email, shippingAddress, phoneNumberRef.current, cart, totalPrice);
 
     alert("Transaction completed by " + name + " " + surname + "\nEmail: " + email + "\nShipping Address: " + shippingAddress + "\nPhone Number: " + phoneNumberRef.current);
+
+    clearCart(); // Clear the cart after successful transaction
   }
 
   return (
