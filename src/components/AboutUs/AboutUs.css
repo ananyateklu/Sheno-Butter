@@ -1,23 +1,28 @@
 .aboutus-container{
-    display: grid ;
+    display: grid;
     grid-template-columns: 25% 75%;
-    grid-gap:2rem;
+    grid-gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .aboutus-main {
     background-image: url("../../assets/aboutback.png");
-    height:100vh;
     background-size:cover;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
     margin-bottom: 5px;
-    margin-left: 5%;
     margin-right: 12%;
-    border-radius: 20px;
+    border-radius: 30px;
     justify-content: space-around;
+    color: white; 
+    padding: 5em 1em 1em 3em;
 }
 
 
+.aboutus-main h1, .aboutus-main h2 {
+    color: #D0B25E; 
+    padding: 0;
+    margin: 0;
+}

@@ -1,31 +1,24 @@
-.origins-container{
-    display: grid;
+.origins-container {
+  display: grid;
 }
 .origins-main {
-    
-    grid-template-columns: 22% 3% 74%;
-   
-    display: grid;
-    
-    
-    margin-bottom: 100px;
-    margin-top:100px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 20px;
-    justify-content: space-around;
+  grid-template-columns: 22% 3% 74%;
 
+  display: grid;
+  width: 90%;
+  margin-bottom: 100px;
+  margin-top: 130px;
+  margin-left: 6%;
+  margin-right: 6%;
+  border-radius: 20px;
+  justify-content: space-around;
 
-    
-    
-    
-    transform: "translate(-50%,-50%)"
+  transform: "translate(-50%,-50%)";
 }
 
-
-.react-parallax{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+.react-parallax {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 /*
 .react-parallax img{
@@ -33,55 +26,55 @@
 }
 */
 
-.origins-side{
-    display: flex;
-    flex-direction: column;
-    background-color: #ccc8c4d6;
-    padding-top: 55%;
-    padding-left: 2rem;
-    /* justify-content: space-around; */
-    padding-bottom: 2rem;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    /* border-top-right-radius: 30px; */
-    /* margin-top: 100px; */
-    color: white;
+.origins-side {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc8c4d6;
+  padding-top: 55%;
+  padding-left: 2rem;
+  /* justify-content: space-around; */
+  padding-bottom: 2rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  /* border-top-right-radius: 30px; */
+  /* margin-top: 100px; */
+  color: white;
 }
 
-.origins-side a{
-    color:black;
+.origins-side a {
+  color: black;
 }
 
-.origins-content{
-    color: aliceblue;
+.origins-content {
+  color: aliceblue;
 }
 
-.ori-cnt-div{
-    background-image: url('../../assets/tilet.png');
+.ori-cnt-div {
+  background-image: url("../../assets/tilet.png");
   background-repeat: repeat;
   background-size: contain;
 }
 
-.ori-cnt-div img{
- object-fit: fit;
+.ori-cnt-div img {
+  object-fit: fit;
 }
 
-.origins-content h1{
-    padding-left:40%;
+.origins-content h1 {
+  padding-left: 40%;
 }
 
-.ori-content{
-    font-size: 18px;
-    line-height: 1.67;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+.ori-content {
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
 }
 
-.ori-content p{
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.ori-content p {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

@@ -15,7 +15,8 @@
   .card-main {
     width: inherit;
     height: inherit;
-    
+    margin-top: 70px;
+    margin-left: 20px;
    
   }
   
@@ -26,7 +27,7 @@
     background-size: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
-    border-radius: 8px;
+    border-radius: 30px;
     display: grid;
     grid-template-columns: 60% 40%;
     
