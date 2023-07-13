@@ -3,7 +3,7 @@
   z-index: 3;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 330px;
   height: 100%;
   background-color: #fff;
   padding: 35px 20px 20px 20px;
@@ -51,8 +51,8 @@
 .cart-item h4 {
   color: #845c5c;
   font-weight: 500;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 21px;
+  margin-right: 20px;
 }
 
 .cart-item h3 {

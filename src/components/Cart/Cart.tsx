@@ -93,7 +93,7 @@ const Cart: React.FC<{ isVisible: boolean, onVisibilityChange: (isVisible: boole
         <div key={index} className="cart-item">
           <h3>{item.quantity}x </h3>
           <h4>{item.productName}</h4>
-          <h4>Price: ${item.price.toFixed(2)}</h4>
+          <h4>${item.price.toFixed(2)}</h4>
           <button onClick={() => handleAddToCart(item.productName, item.price)}>+</button>
           <button onClick={() => handleRemoveFromCart(item.productName, item.price)}>-</button>
         </div>
