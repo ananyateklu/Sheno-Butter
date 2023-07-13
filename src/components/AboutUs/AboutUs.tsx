@@ -25,7 +25,20 @@ const AboutUs: React.FC = () => {
                 </div>
             </div>
             <div className="aboutus-main">
-                AboutUs
+             
+                <h1>About Us</h1>
+                <h2>Our Company</h2>
+                <p>Put a short company overview here. Let people know what your business does.</p>
+
+                <h2>Our Mission</h2>
+                <p>What is your mission? What drives your company forward?</p>
+
+                <h2>Our Team</h2>
+                <p>Introduce your team here. Highlight key members and their roles.</p>
+
+                <h2>Our Milestones</h2>
+                <p>Key achievements, significant contracts, business milestones etc.</p>
+            
             </div>
         </div>
     );
