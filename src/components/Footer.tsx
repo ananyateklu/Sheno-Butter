@@ -12,6 +12,12 @@ const Footer: React.FC = () => {
                 </a>
             </div>
             <div className="footer-links">
+                <a href="/" className="Home-link-footer">
+                    HOME
+                </a>
+                <a href="/origins" className="Origins-link-footer">
+                    ORIGINS
+                </a>
                 <a href="/aboutUs" className="About-link-footer">
                     ABOUT US
                 </a>
