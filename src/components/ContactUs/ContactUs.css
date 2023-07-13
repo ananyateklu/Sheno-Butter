@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 .card {
-    display: grid;
-    width: 92%;
-    height: 600px;
-    transition: all 0.2s;
-    position: relative;
-    cursor: pointer;
-    margin-left:10%;
-    margin-top:3%;
-    margin-bottom: 200px;
+  display: grid;
+  width: 92%;
+  /* height: 600px; */
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  /* margin-left: 10%; */
+  margin-top: 100px;
+  /* margin-bottom: 200px;*/
   }
 
   .card-main {
     width: inherit;
     height: inherit;
-    margin-top: 100px;
+    
    
   }
   
   .card-inner {
     width: inherit;
     height: inherit;
-    background: rgba(255,255,255,.05);
+    background-image: url('../../assets/ct-back.png');
+    background-size: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     backdrop-filter: blur(10px);
     border-radius: 8px;
@@ -43,13 +44,13 @@
   }
   
   .circle:nth-child(1) {
-    top: 75px;
-    left: -25px;
+    top: -4%;
+    left: -3%;
   }
   
   .circle:nth-child(2) {
-    bottom: -25%;
-    right: 12%;
+    bottom: -4%;
+    right: 4%;
     animation-name: move-down1;
   }
   
@@ -133,6 +134,40 @@
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 5px;
   }
+
+  .input-last {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+
+  }
+
+  .form label .input-last + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input-last:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input-last:focus + span,.form label .input-last:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input-last:valid + span {
+    color: green;
+  }
   
   .form label .input01 + span {
     position: absolute;
@@ -163,6 +198,7 @@
     background-color: transparent;
     border: 2px solid #cacaca;
     border-radius: 0px;
+    width: 70%;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -279,4 +315,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+  }
+
+
+  .contact-img img{
+    max-width: 100%;
+    
   }

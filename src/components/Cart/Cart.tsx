@@ -8,12 +8,13 @@ const initialOptions = {
   "clientId": process.env.REACT_APP_PAYPAL_CLIENT_ID || ""
 };
 
-const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
-  const { cart, removeFromCart, addToCart } = useContext(CartContext);
+const Cart: React.FC<{ isVisible: boolean, onVisibilityChange: (isVisible: boolean) => void }> = ({ isVisible, onVisibilityChange }) => {
+  const { cart, removeFromCart, addToCart, clearCart } = useContext(CartContext);
 
   const [forceRefresh, setForceRefresh] = useState(Date.now());
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const phoneNumberRef = useRef(phoneNumber);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // new state variable
 
   useEffect(() => {
     phoneNumberRef.current = phoneNumber;
@@ -58,7 +59,7 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
       });
 
       if (response.status === 200) {
-        alert('Purchase completed successfully!');
+        
       } else {
         throw new Error('Failed to send email');
       }
@@ -74,20 +75,25 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
     const email = details.payer!.email_address;
     const address: any = details.purchase_units![0].shipping!.address;
     const shippingAddress = `${address.address_line_1}, ${address.admin_area_2}, ${address.admin_area_1}, ${address.postal_code}, ${address.country_code}`;
-
+  
     await sendEmail(name, surname, email, shippingAddress, phoneNumberRef.current, cart, totalPrice);
-
-    alert("Transaction completed by " + name + " " + surname + "\nEmail: " + email + "\nShipping Address: " + shippingAddress + "\nPhone Number: " + phoneNumberRef.current);
+  
+    setShowSuccessMessage(true);
+    clearCart();
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+      onVisibilityChange(false); // Hide the cart after the success message has been displayed
+    }, 10000); // Show the success message for 10 seconds
   }
 
   return (
-    <div className="cart-container">
+    <div className={isVisible ? "cart-container" : "cart-container hidden"}>
       <h2>Your Cart</h2>
       {cart.map((item, index) => (
         <div key={index} className="cart-item">
           <h3>{item.quantity}x </h3>
           <h4>{item.productName}</h4>
-          <h4>Price: ${item.price.toFixed(2)}</h4>
+          <h4>${item.price.toFixed(2)}</h4>
           <button onClick={() => handleAddToCart(item.productName, item.price)}>+</button>
           <button onClick={() => handleRemoveFromCart(item.productName, item.price)}>-</button>
         </div>
@@ -98,21 +104,21 @@ const Cart: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
       <PayPalScriptProvider options={initialOptions}>
         <PayPalButtons
           key={forceRefresh}
-          disabled={phoneNumber === ""}
+          disabled={phoneNumber === "" || totalPrice === 0}
+          style={{ layout: "vertical" }}
           createOrder={(data, actions) => {
-            return actions.order!.create({
-              purchase_units: [
-                {
-                  amount: {
-                    value: totalPrice.toFixed(2),
-                  },
-                },
-              ],
+            return actions.order.create({
+              purchase_units: [{
+                amount: {
+                  value: totalPrice.toFixed(2)
+                }
+              }]
             });
           }}
           onApprove={handleOnApprove}
         />
       </PayPalScriptProvider>
+      {showSuccessMessage && <div className="success-message">Transaction successful. Thank you for your order!</div>}
     </div>
   );
 }

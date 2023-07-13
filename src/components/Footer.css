@@ -51,7 +51,7 @@
     margin-right: 100px;
 }
 
-.Home-link {
+.Home-link-footer {
     font-size: calc(1px + 1.8vmin);
     color: #8f5c5cf2;
     text-decoration: none;
@@ -60,7 +60,7 @@
     margin-right: 20px;
   }
   
-  .Origins-link {
+  .Origins-link-footer {
     font-size: calc(1px + 1.8vmin);
     color: #8f5c5cf2;
     text-decoration: none;
@@ -69,7 +69,7 @@
     margin-right: 20px;
   }
   
-  .About-link {
+  .About-link-footer {
     font-size: calc(1px + 1.8vmin);
     color: #8f5c5cf2;
     text-decoration: none;
@@ -78,7 +78,7 @@
     margin-right: 20px;
   }
 
-.Contact-link {
+.Contact-link-footer {
     font-size: calc(1px + 1.8vmin);
     color: #8f5c5cf2;
     text-decoration: none;
