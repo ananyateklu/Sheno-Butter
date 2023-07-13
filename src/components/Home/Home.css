@@ -45,7 +45,7 @@
 .side-bar {
   margin-left: 25%;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 55% 45%;
   grid-area: 1/1/2/2;
 }
 
@@ -64,8 +64,8 @@
   display: flex;
   flex-direction: column;
   background-color: #f4f4eb;
-  padding-top: 55%;
-  padding-left: 5rem;
+  padding-top: 35%;
+  padding-left: 1.5rem;
   justify-content: space-around;
   padding-bottom: 2rem;
   border-top-left-radius: 30px;
@@ -83,53 +83,73 @@
   overflow: hidden;
 }
 
-.Home-link {
+
+.Home-link  {
   font-size: calc(1px + 1.8vmin);
-  color: #8f5c5cf2;
-  text-decoration: none;
-  animation: slideDown 1s ease-in-out;
-}
-
-.Origins-link {
-  font-size: calc(1px + 1.8vmin);
-  color: #8f5c5cf2;
-  text-decoration: none;
-  animation: slideDown 1.5s ease-in-out;
-}
-
-
-
-.Contact-link {
-  font-size: calc(1px + 1.8vmin);
+  display: flex;
   color: #8f5c5cf2;
   text-decoration: none;
   animation: slideDown 2.5s ease-in-out;
 }
 
-.Contact-link img {
-  display: absolute;
-  margin-left: 8px;
-}
-.Contact-link p {
+.Home-link  img {
   display: absolute;
 
+}
+
+.Home-link  p {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Origins-link  {
+  font-size: calc(1px + 1.8vmin);
+  display: flex;
+  color: #8f5c5cf2;
+  text-decoration: none;
+  animation: slideDown 2.5s ease-in-out;
+}
+
+.Origins-link  img {
+  display: absolute;
+
+}
+.Origins-link  p {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Contact-link {
+  font-size: calc(1px + 1.8vmin);
+  display: flex;
+  color: #8f5c5cf2;
+  text-decoration: none;
+  animation: slideDown 2.5s ease-in-out;
+}
+
+.Contact-link  img {
+  display: absolute;
+
+}
+.Contact-link  p {
+  margin-top: 25px;
+  margin-left: 5px;
 }
 
 .About-link {
   font-size: calc(1px + 1.8vmin);
   color: #8f5c5cf2;
+  display: flex;
   text-decoration: none;
-  animation: slideDown 2s ease-in-out;
-  margin-top: 30px;
+  animation: slideDown 2.5s ease-in-out;
 }
 
 .About-link img {
   display: absolute;
-  margin-left: 8px;
 }
 .About-link p {
-  display: absolute;
-  margin-left: 8px;
+  margin-top: 25px;
+  margin-left: 5px;
 }
 
 .main-img-ctn {

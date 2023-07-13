@@ -9,6 +9,10 @@ const Home: React.FC = () => {
   const { addToCart, cart } = useContext(CartContext);
   const [isCartVisible, setIsCartVisible] = useState(false);
 
+  const handleVisibilityChange = (isVisible: boolean) => {
+    setIsCartVisible(isVisible);
+  }
+
   const handleAddToCart = (productName: string, price: number) => {
     addToCart({ productName, price, quantity: 1 });
     setIsCartVisible(true); // show cart when item is added
@@ -40,16 +44,20 @@ const Home: React.FC = () => {
           setIsCartVisible(!isCartVisible);
         }}
       /> <p className="cart-amount">{itemCount}</p>
-      {isCartVisible && <Cart isVisible={isCartVisible} />}
+      {isCartVisible && <Cart isVisible={isCartVisible} onVisibilityChange={handleVisibilityChange} />}
       <div className="side-bar">
         <div className="Home-Navbar">
+          <a href="/origins" className="Origins-link">
+            <img width="70" height="70" src="https://img.icons8.com/bubbles/100/news.png" alt="news" />
+            <p style={{ width: "50", height: "50" }}>ORIGINS</p>
+          </a>
           <a href="/contactUs" className="Contact-link">
-          <img width="70" height="70" src="https://img.icons8.com/bubbles/100/email--v1.png" alt="email--v1"/>
-            <p style={{width: "50", height: "50"}}>CONTACT US</p>
+            <img width="70" height="70" src="https://img.icons8.com/bubbles/100/email--v1.png" alt="email--v1" />
+            <p style={{ width: "50", height: "50" }}>CONTACT US</p>
           </a>
           <a href="/aboutUs" className="About-link">
-          <img width="70" height="70" src="https://img.icons8.com/bubbles/100/000000/about.png" alt="about"/>
-            <p style={{width: "50", height: "50"}}>ABOUT US</p>
+            <img width="70" height="70" src="https://img.icons8.com/bubbles/100/000000/about.png" alt="about" />
+            <p style={{ width: "50", height: "50" }}>ABOUT US</p>
           </a>
         </div>
         <div className="sidebar-img">

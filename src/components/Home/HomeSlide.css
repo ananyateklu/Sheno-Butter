@@ -26,13 +26,15 @@ article.active {
 }
 
 article h2 {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 400;
     color: rgb(255 255 255 / 96%);
 }
 
 article p {
     color: rgb(255 255 255 / 66%);
+    font-size: 14px;
+    width: 45%;
 }
 
 article

@@ -11,6 +11,7 @@
   box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
+
 .cart-container h2 {
     color: black;
     font-weight: 600;
@@ -115,5 +116,22 @@
     color: #845c5c;
     font-weight: 600;
     font-size: 16px;
+  }
+  
+  .success-message {
+    width: 85%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* light grey */
+    color: #333333; /* dark grey */
+    border: 1px solid #dee2e6; /* border color */
+    border-radius: 5px;
+    margin: 20px 0;
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
   
