@@ -1,9 +1,9 @@
 .origins-container {
   display: grid;
 }
+
 .origins-main {
   grid-template-columns: 22% 3% 74%;
-
   display: grid;
   width: 90%;
   margin-bottom: 100px;
@@ -12,7 +12,6 @@
   margin-right: 6%;
   border-radius: 20px;
   justify-content: space-around;
-
   transform: "translate(-50%,-50%)";
 }
 
@@ -20,11 +19,11 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-/*
-.react-parallax img{
-    height:800px !important;
+
+.react-parallax {
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4) !important;
 }
-*/
+
 
 .origins-side {
   display: flex;
@@ -35,6 +34,7 @@
   /* justify-content: space-around; */
   padding-bottom: 2rem;
   border-top-left-radius: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
   border-bottom-left-radius: 30px;
   /* border-top-right-radius: 30px; */
   /* margin-top: 100px; */
@@ -53,6 +53,8 @@
   background-image: url("../../assets/tilet.png");
   background-repeat: repeat;
   background-size: contain;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4) !important;
+  
 }
 
 .ori-cnt-div img {
@@ -77,4 +79,33 @@
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .origins-side {
+    display: none;
+  }
+  .ori-cnt-div {
+    display: none;
+  }
+
+  .origins-main {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 130px;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 20px;
+    justify-content: space-around;
+    transform: "translate(-50%,-50%)";
+  }
+  .react-parallax {
+    overflow: hidden !important;
+    position: inherit !important;
+    margin-bottom: 300px;
+  }
 }

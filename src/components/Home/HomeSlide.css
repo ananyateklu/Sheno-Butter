@@ -15,6 +15,7 @@ article {
     align-items: flex-end;
     opacity: 0.9;
     transition: 0.5s;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.8);
 }
 
 h2, p {margin:0;}
@@ -57,6 +58,7 @@ article img{
     translate: -50% -50%;
     height: 150%;
     filter: grayscale(0.5);
+    
 }
 
 article .content {
