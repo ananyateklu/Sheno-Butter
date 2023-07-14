@@ -411,6 +411,29 @@ body {
     overflow: hidden;
   }
 
+  .Home-link p {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+
+  .Origins-link p {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+
+  .About-link p {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+
+  .Contact-link p {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
 
   .main-img {
     width: 85%;
