@@ -100,4 +100,10 @@ article.active .content {
         background: linear-gradient( to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 /80%));
         transition: 0.25s;
     }
+    article h2 {
+        font-size: 14px;
+        width: 50%;
+        font-weight: 400;
+        color: rgb(255 255 255 / 96%);
+    }
 }
