@@ -9,7 +9,7 @@
   cursor: pointer;
   /* margin-left: 10%; */
   margin-top: 100px;
-  /* margin-bottom: 200px;*/
+  margin-bottom: 13px;
   }
 
   .card-main {
@@ -25,7 +25,7 @@
     height: inherit;
     background-image: url('../../assets/ct-back.png');
     background-size: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     display: grid;
