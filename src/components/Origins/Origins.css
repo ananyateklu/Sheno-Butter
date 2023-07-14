@@ -81,3 +81,31 @@
   padding-right: 1rem;
 }
 
+
+@media screen and (max-width: 768px) {
+
+  .origins-side {
+    display: none;
+  }
+  .ori-cnt-div {
+    display: none;
+  }
+
+  .origins-main {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 130px;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 20px;
+    justify-content: space-around;
+    transform: "translate(-50%,-50%)";
+  }
+  .react-parallax {
+    overflow: hidden !important;
+    position: inherit !important;
+    margin-bottom: 300px;
+  }
+}

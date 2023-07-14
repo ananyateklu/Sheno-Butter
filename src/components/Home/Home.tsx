@@ -5,9 +5,11 @@ import HomeSlide from "./HomeSlide";
 import CartContext from '../Cart/CartContext';
 import Cart from '../Cart/Cart';
 
+
 const Home: React.FC = () => {
   const { addToCart, cart } = useContext(CartContext);
   const [isCartVisible, setIsCartVisible] = useState(false);
+
 
   const handleVisibilityChange = (isVisible: boolean) => {
     setIsCartVisible(isVisible);
