@@ -88,14 +88,24 @@ const Home: React.FC = () => {
         </div>
         <div className="product-holder">
           <div className="product">
-            <h3>1Lb Butter (ቂቤ)</h3>
+            <div className="product-pic">
+            
+            </div>
+            <div className="product-detail">
+            <h3>1Lb Butter (ቅቤ)</h3>
             <h2>$15.00</h2>
-            <button className="addtocart-btn" onClick={() => handleAddToCart('1Lb Butter (ቂቤ)', 15.00)}>Add to Cart</button>
+            <button className="addtocart-btn" onClick={() => handleAddToCart('1Lb Butter (ቅቤ)', 15.00)}>Add to Cart</button>
+            </div>
           </div>
           <div className="product">
-            <h3>2Lb Butter (ቂቤ)</h3>
+            <div className="product-pic">
+            
+            </div>
+            <div className="product-detail">
+            <h3>2Lb Butter (ቅቤ)</h3>
             <h2>$25.00</h2>
-            <button className="addtocart-btn" onClick={() => handleAddToCart('2Lb Butter (ቂቤ)', 25.00)}>Add to Cart</button>
+            <button className="addtocart-btn" onClick={() => handleAddToCart('2Lb Butter (ቅቤ)', 25.00)}>Add to Cart</button>
+          </div>
           </div>
         </div>
       </div>

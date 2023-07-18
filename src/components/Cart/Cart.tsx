@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Cart.css';
 import CartContext from './CartContext';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import butterimg from '../../assets/Sized.png';
 
 const initialOptions = {
   "clientId": process.env.REACT_APP_PAYPAL_CLIENT_ID || ""
@@ -92,6 +93,7 @@ const Cart: React.FC<{ isVisible: boolean, onVisibilityChange: (isVisible: boole
       {cart.map((item, index) => (
         <div key={index} className="cart-item">
           <h3>{item.quantity}x </h3>
+          <img src={butterimg} alt="butterimg" className="butterimg" />
           <h4>{item.productName}</h4>
           <h4>${item.price.toFixed(2)}</h4>
           <button onClick={() => handleAddToCart(item.productName, item.price)}>+</button>
