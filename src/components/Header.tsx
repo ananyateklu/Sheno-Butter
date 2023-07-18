@@ -1,10 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import logo from '../assets/shenologot.png';
 import './Header.css';
-import burger from '../assets/burger.png'
+import burger from '../assets/burger.png';
+import Cart from '../components/Cart/Cart';
+import CartContext from '../components/Cart/CartContext';
 
 const Header: React.FC = () => {
+  const { cart } = useContext(CartContext);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [isCartVisible, setIsCartVisible] = useState(false);
+
+  const handleVisibilityChange = (isVisible: boolean) => {
+    setIsCartVisible(isVisible);
+  }
 
   useEffect(() => {
 
@@ -12,6 +20,8 @@ const Header: React.FC = () => {
 
     };
   }, []);
+
+  const itemCount = cart.reduce((count, item) => count + item.quantity, 0);
 
   return (
     <header className="header">
@@ -41,6 +51,19 @@ const Header: React.FC = () => {
         <a href="/" className="App-logo-link">
           <img src={logo} className="App-logo" alt="logo" />
         </a>
+      </div>
+      <div className="cart-bar">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-cart-supermarket-flatart-icons-flat-flatarticons.png" alt="external-cart-supermarket-flatart-icons-flat-flatarticons"
+          className="cart-button oneb"
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent click from bubbling to container
+            setIsCartVisible(!isCartVisible);
+          }}
+        /> <p className="cart-amount oneb" onClick={(e) => {
+          e.stopPropagation(); // Prevent click from bubbling to container
+          setIsCartVisible(!isCartVisible);
+        }}>{itemCount}</p>
+        {isCartVisible && <Cart isVisible={isCartVisible} onVisibilityChange={handleVisibilityChange} />}
       </div>
     </header>
   );
