@@ -26,8 +26,11 @@ const Footer: React.FC = () => {
                 </a>
             </div>
             <div className="footer-social">
-                <p>Shenobutter@gmail.com</p>
-                <p>+1 651 343 (3843)</p>
+                <p className="footer-add">691 Dale Street N</p>
+                <p className="footer-add2">Saint Paul, MN 55103</p>
+                <br />
+                <p className="footer-email">Shenobutter@gmail.com</p>
+                <p className="footer-phone">952-236-9641</p>
             </div>
             <div className="footer-maintext">
                 <p>Disclaimer: All product images and descriptions on this site are provided
