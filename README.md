@@ -1,49 +1,75 @@
-# Getting Started with Create React App
+# Sheno Butter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application created for Sheno Butter, an online platform selling traditional butter. The website integrates with PayPal for processing payments and uses email automation for order confirmation and notifications. 
 
-Create .env file on the main directory
-REACT_APP_PAYPAL_CLIENT_ID= 'PaypalClientID'
+## Table of Contents
 
-## Available Scripts
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Butter Purchase Options: Users can purchase butter in two quantities - 0.8 lbs and 1.6 lbs.
+- PayPal Integration: The website integrates with PayPal for secure and reliable payment processing.
+- Email Automation: Order confirmations and notifications are automatically sent to users. The Sheno Butter team also receives detailed order information via email.
+- About Us: A page dedicated to sharing the story and mission of Sheno Butter.
+- Contact Us: A page with a contact form, using email automation to receive user queries or feedback directly to the Sheno Butter team's email.
+- Origins: A page explaining the traditions and origins of the butter sold on the site.
+- Interactive Homepage: Features a card slider showcasing the spices used in the butter, with each card containing a spice picture and description. The homepage also offers the two butter choices for adding to the cart.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```bash
+git clone https://github.com/yourusername/sheno-butter.git
+```
+2. Change to the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd sheno-butter
+```
+3. Install dependencies:
 
-### `npm run build`
+```bash
+npm install
+```
+## Usage
+Start the development server:
+```bash
+npm start
+```
+The application should now be running on http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build for production: (Don't use this unless it's for production)
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This command will create a build folder containing the optimized production build.
 
-### `npm run eject`
+## Environment Variables
+To keep your API keys and other sensitive information secure, create a .env file in the root folder of your project and add the following environment variables:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+REACT_APP_PAYPAL_CLIENT_ID=''
+REACT_APP_SERVICE_ID=''
+REACT_APP_TEMPLATE_ID=''
+REACT_APP_TEMPLATE_ID_M=''
+REACT_APP_USER_ID=''
+```
+Replace the above placeholders with your actual values.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+If you would like to contribute to this project, please follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository
+2. Create a new branch with a descriptive name, e.g., feature-add-new-product
+3. Make your changes on the new branch
+4. Push your changes to your fork
+5. Create a pull request
+6. Please make sure your code follows best practices and is well-documented.
