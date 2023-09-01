@@ -25,20 +25,26 @@ const AboutUs: React.FC = () => {
                 </div>
             </div>
             <div className="aboutus-main">
-             
+
                 <h1>About Us</h1>
                 <h2>Our Company</h2>
-                <p>Put a short company overview here. Let people know what your business does.</p>
+                <p>Sheno Butter established in 2021 in Saint Paul, Minnesota.  We are a wholesale company providing Sheno Butter locally and throughout the United States.</p>
 
                 <h2>Our Mission</h2>
-                <p>What is your mission? What drives your company forward?</p>
+                <p>To provide high quality Sheno Butter Ghee using time-honored techniques and the finest imported and local ingredients.</p>
 
                 <h2>Our Team</h2>
-                <p>Introduce your team here. Highlight key members and their roles.</p>
+                <p>Dedicated members who prepare the butter, market it and deliver it to our customers.</p>
 
                 <h2>Our Milestones</h2>
-                <p>Key achievements, significant contracts, business milestones etc.</p>
-            
+                <p>You can find Sheno Butter outside Minnesota at</p>
+                <ul>
+                    <li>Merkato- 2639 Lakevilla Drive Nashville, TN 37217</li>
+                    <li>Viva Food Market- 535 N Plano Road Garland, TX 75042</li>
+                    <li>Nazret Cultural Foods- 656 Pickett Street Alexandria, VA 22304</li>
+                </ul>
+
+
             </div>
         </div>
     );

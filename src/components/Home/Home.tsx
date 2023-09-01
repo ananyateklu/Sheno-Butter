@@ -77,7 +77,7 @@ const Home: React.FC = () => {
           <div className="main-img">
             <p>AUTHENTIC ETHIOPIAN <br /> BUTTER
               <br />
-              እቤት የተነጠረ የኢትዮጵያ <br /> ቅቤ </p>
+              ምርጥ የተነጠረ የኢትዮጵያ <br /> ቅቤ </p>
           </div>
           <div className="side-img">
             <HomeSlide />
@@ -93,8 +93,8 @@ const Home: React.FC = () => {
             </div>
             <div className="product-detail">
             <h3>1Lb Butter (ቅቤ)</h3>
-            <h2>$15.00</h2>
-            <button className="addtocart-btn" onClick={() => handleAddToCart('1Lb Butter (ቅቤ)', 15.00)}>Add to Cart</button>
+            <h2>$14.95 + shipping</h2>
+            <button className="addtocart-btn" onClick={() => handleAddToCart('1Lb Butter (ቅቤ)', 14.95)}>Add to Cart</button>
             </div>
           </div>
           <div className="product">
@@ -103,8 +103,8 @@ const Home: React.FC = () => {
             </div>
             <div className="product-detail">
             <h3>2Lb Butter (ቅቤ)</h3>
-            <h2>$25.00</h2>
-            <button className="addtocart-btn" onClick={() => handleAddToCart('2Lb Butter (ቅቤ)', 25.00)}>Add to Cart</button>
+            <h2>$28.90 + shipping</h2>
+            <button className="addtocart-btn" onClick={() => handleAddToCart('2Lb Butter (ቅቤ)', 28.90)}>Add to Cart</button>
           </div>
           </div>
         </div>
