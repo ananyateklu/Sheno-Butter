@@ -199,7 +199,7 @@ body {
   margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 1rem;
-  background-image: url("../../assets/mainimg.png");
+  background-image: url("../../assets/buttersheno.jpg");
   background-size: cover;
   border-radius: 36px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
@@ -210,11 +210,16 @@ body {
 }
 
 .main-img p {
-  color: white;
-  font-size: larger;
-  padding-top: 30%;
-
+  color: #684343f2;
+  font-size: medium;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgb(244, 244, 235, 0.2);
   text-align: center;
+  border-radius: 10px;
   animation: fadeIn 3s ease-in-out;
 }
 
@@ -285,7 +290,7 @@ body {
 }
 
 .product h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #744949f2;
   margin: 0;
