@@ -108,4 +108,7 @@
     position: inherit !important;
     margin-bottom: 300px;
   }
+  .origins-content h1 {
+    padding-left: 30%;
+  }
 }
