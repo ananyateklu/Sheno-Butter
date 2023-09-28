@@ -38,9 +38,14 @@
     .aboutus-main {
         margin: 0;
         margin-top: 90px;
-        padding: 1em;
+        padding: 1.5em;
         width: 80%;
-        height: 500px;
+        height: 600px;
         border-radius: 20px;
+    }
+    .aboutus-main h1, .aboutus-main h2 {
+        color: #D0B25E; 
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }

@@ -406,12 +406,16 @@ body {
   }
 
   .main-img p {
-    color: white;
+    color: #684343f2;
     font-size: larger;
-    padding-top: 25%;
-    padding-bottom: 25%;
+    padding-top: 10%;
+    padding-bottom: 30%;
     text-align: center;
     animation: fadeIn 3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.423);
+    width: 180px;
+    height: 50px;
+    margin-bottom: 50px;
   }
 
   .Home-main .main-img-ctn {
@@ -494,13 +498,14 @@ body {
   }
 
 .product h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #744949f2;
   margin: 0;
   padding: 0;
   position: absolute;
-  margin-top: -10px;
+  margin-top: -5px;
+  margin-right: 10px;
 }
 
 .product h3 {
